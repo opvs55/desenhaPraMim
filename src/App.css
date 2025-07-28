@@ -1,0 +1,41 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* ADICIONADO: Centraliza verticalmente */
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  gap: 2rem;
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+}
+
+header {
+  text-align: center;
+  max-width: 600px;
+  flex-shrink: 0;
+}
+
+header h1 {
+  font-size: 2.75rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1rem;
+  color: var(--secondary-text-color);
+}
+
+.art-container {
+  width: 100%;
+  max-width: 900px;
+  padding: 1rem; /* Um pouco menos de padding para dar mais espaço à arte */
+  background-color: var(--surface-color);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--border-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

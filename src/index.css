@@ -1,0 +1,24 @@
+/* Definição de variáveis de cor para fácil manutenção */
+:root {
+  --background-color: #1a1d22; /* Um cinza escuro, mais suave que preto puro */
+  --surface-color: #252830; /* Cor para superfícies como a moldura */
+  --primary-text-color: #f0f0f0; /* Branco suave para texto principal */
+  --secondary-text-color: #a0a0a0; /* Cinza para texto secundário */
+  --accent-color: #00aaff; /* Um azul elétrico para botões e destaques */
+  --accent-color-hover: #0088cc;
+  --border-color: #444;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif; /* Nova fonte aplicada */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  
+  /* Um gradiente sutil no fundo para dar profundidade */
+  background-image: radial-gradient(circle at top, #252830, var(--background-color));
+  background-repeat: no-repeat;
+}

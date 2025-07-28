@@ -1,0 +1,35 @@
+.art-canvas-container {
+  width: 100%;
+  position: relative;
+  aspect-ratio: 1 / 1; /* Pixel art geralmente fica melhor em um quadro quadrado */
+  background-color: var(--surface-color);
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.pixel-art-canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+    /* Garante que os pixels fiquem nítidos e não borrados */
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+}
+/* O loading continua o mesmo */
+.loading-overlay {
+  position: absolute; inset: 0; display: flex;
+  justify-content: center; align-items: center;
+  background-color: rgba(0,0,0,0.5);
+  backdrop-filter: blur(4px); z-index: 100;
+}
+
+.loading-overlay span {
+  font-size: 1.2rem; font-weight: 600;
+  color: var(--primary-text-color);
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.7; } 50% { opacity: 1; } 100% { opacity: 0.7; }
+}
