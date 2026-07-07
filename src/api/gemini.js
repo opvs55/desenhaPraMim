@@ -4,7 +4,7 @@ const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 if (!API_KEY) throw new Error("VITE_GEMINI_API_KEY não encontrada.");
 
 const genAI = new GoogleGenerativeAI(API_KEY);
-const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash-lite' });
+const model = genAI.getGenerativeModel({ model: 'gemini-3-flash-preview' });
 
 // --- ETAPA 1: O CONCEITO ---
 const createAnalysisPrompt = (userPrompt) => `
